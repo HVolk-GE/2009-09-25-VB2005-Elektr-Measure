@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asmv1:assemblyIdentity name="MeasureAndWeigh.exe" version="1.0.0.11" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="topicsman.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MeasureAndWeigh" version="1.0.2427.25385" language="neutral" processorArchitecture="x86" />
+    <commandLine file="MeasureAndWeigh.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ADODB.dll" size="110592">
+      <assemblyIdentity name="ADODB" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>o/V93eadQXHNnFDbbFfni9zgjeg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.ActiveXPlugin.dll" size="5120">
+      <assemblyIdentity name="AxInterop.ActiveXPlugin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>E9GWHxdKBx2JTeZxPeVl+WrdMnk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.MSChart20Lib.dll" size="61440">
+      <assemblyIdentity name="AxInterop.MSChart20Lib" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>e4VeulRJahFhLTnsoGqH10pUxjQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.MSChartWiz.dll" size="4096">
+      <assemblyIdentity name="AxInterop.MSChartWiz" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>twW15AARvzFFTFnWxBtq3S19DAs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.OWC10.dll" size="143360">
+      <assemblyIdentity name="AxInterop.OWC10" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>r9mS6ApT0Qq0w8gsU6E1IFdkBE8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.ActiveXPlugin.dll" size="6144">
+      <assemblyIdentity name="Interop.ActiveXPlugin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>SkxumOcvereIea+IjGnekXa0f8Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.DataFormWizard6.dll" size="12800">
+      <assemblyIdentity name="Interop.DataFormWizard6" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Km03sDWPz1xXY4B1OuQr+kKli0Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.DEDesignerExtensibility.dll" size="53248">
+      <assemblyIdentity name="Interop.DEDesignerExtensibility" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Gjk2TscClsVUE//7915S0r6isDw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.MSChart20Lib.dll" size="143360">
+      <assemblyIdentity name="Interop.MSChart20Lib" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>OKXwwN2iJYwGAor8QMZnTkgLydo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.MSChartWiz.dll" size="8192">
+      <assemblyIdentity name="Interop.MSChartWiz" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>rirP7Y5Xh8FSBJjM6/AYF/N9Lhk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.MSVBDataObjGen.dll" size="57344">
+      <assemblyIdentity name="Interop.MSVBDataObjGen" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>EKBxMr47dh0po8oq6h135fX0PHQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.OWC10.dll" size="434176">
+      <assemblyIdentity name="Interop.OWC10" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Ei0uFKKJn3Xch0NKOsDzYWJxlBo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.SubWiz.dll" size="7680">
+      <assemblyIdentity name="Interop.SubWiz" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>6LMYCqCPbBABMXf2Jf4tvCxUq+E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.VBIDE.dll" size="126976">
+      <assemblyIdentity name="Interop.VBIDE" version="5.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>n/bKVmPUH5eTJQf+cSsbm2um4FU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MeasureAndWeigh.exe" size="589824">
+      <assemblyIdentity name="MeasureAndWeigh" version="1.0.2427.25385" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>sVR5JaxYEbPx5akEJpcSatEvS7Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Interop.Excel.dll" size="1100392">
+      <assemblyIdentity name="Microsoft.Office.Interop.Excel" version="11.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>F9KcWGdatx3NMdBih72kWn9Kyzk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Vbe.Interop.dll" size="64088">
+      <assemblyIdentity name="Microsoft.Vbe.Interop" version="11.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>TYuB9hyuoYvM3Fgsjd+TSTdMLbY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="mscomctl.dll" size="229376">
+      <assemblyIdentity name="mscomctl" version="10.0.4504.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>wejd/GSZXArMSGI/MKrbFEi8pi8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MSDATASRC.dll" size="4096">
+      <assemblyIdentity name="MSDATASRC" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ZTX36ccYVs7RanPeNGIzCwVErwU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="office.dll" size="223800">
+      <assemblyIdentity name="office" version="11.0.0.0" publicKeyToken="71E9BCE111E9429C" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>qLZAFskrUjHV/TFbvevZR7hSGP4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="16384">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>U4/sOygZ+43zfeSDXD9zu80FVGo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8.htm" size="196032">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>tX9/tgrnQVoT9coN/UfKlYYTqGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\filelist.xml" size="1546" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Rx5yQadUbo6j9x3FBABuSH5Ol7U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\header.htm" size="5079">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Rrq5dBdmEIxvAACp/I/uvSb8+V0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image001.jpg" size="1413">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3RKQP/5MPO5RfwHCQsXKhIGJhLY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image003.png" size="15930">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YYc68XkDCqn7JjR9r6pFjAF1MgQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image005.png" size="12732">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6Z4Um9lbVvPfuWiBA00Ak0VhJk8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image007.png" size="12954">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5Vxez/3CsapeLhbnSDtGtYvdMEc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image009.png" size="35423">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TI7Tq7g0eicF4izkHqLsLkZljNw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image011.png" size="133353">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Uctnk6NH5EbDZAoMg8N6oDEe+64=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image013.png" size="133652">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>PADJxQth/z2oPGF3o27DBmoyHBg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image015.png" size="21486">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>m5aV7x5i0HfuCAyfDsN6Yu+A5h8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image017.png" size="17502">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ArXKZN4GAAdeK+jOh159Ee/2IqE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image019.png" size="16317">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NdkhmhY2otoa/gvpIgy2ejYJMVI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image021.png" size="22136">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XDB/kVnwRgKVZlSo6Uwrj5uYBWo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image023.jpg" size="22618">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>BX2QTi1As70SvqFtxmhmWBoFS9Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image025.png" size="22738">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>dNn/4DGOb0uQLN0Mwz1obfxUyXc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image031.gif" size="1160">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UUNUKT36IqloLJT2UD3UtRfbQrM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image032.gif" size="799">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>89cjf8ix8p0/GT/dMizeiehIGQA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image033.gif" size="4717">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lI80Lu9NbHcDt90G5SG+AV+ZZsA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image034.png" size="51490">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+4Drn1Y1YttP+8r7rrMf6gzE/UA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image036.jpg" size="1970">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lbRM9BWzvKqRir5SSBnXNBLTuuQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image037.jpg" size="904">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bocbIfyroQkUFrR1CbeTv8Yq8qs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image038.jpg" size="17965">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FXoO3kO9/9PwqYso14BTkLubvko=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image039.jpg" size="12283">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1gp9chLUO2m9cjZVWn0nuzHGI7Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image040.jpg" size="11923">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3kA4K0LW5NGEmiXcu1X9TTeRUYc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image041.jpg" size="23548">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xh+Q/xkfGGney6QRjfVJhd9KG8w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image042.jpg" size="1970">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lbRM9BWzvKqRir5SSBnXNBLTuuQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image043.jpg" size="904">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bocbIfyroQkUFrR1CbeTv8Yq8qs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image044.jpg" size="23534">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Ls/+fIC8HFO8w9rpNemVrc+pyJs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image045.jpg" size="28291">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TJ4N91OeixE/z9rXaLf1jhXCVn8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image046.jpg" size="29817">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UYmPxqskK5517GX1pDrl8wHuYKQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image047.jpg" size="40530">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>DRNUMUuxo7HU1ilixvgJTQvEWkg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image048.jpg" size="30294">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Nb3Ofx4aoRvKAzV/Mak0glLTZTE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image049.jpg" size="28465">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kGPKgJg1bCVmqQFFilS8FZTJHz8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image050.jpg" size="38310">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qtZ5rJAd9CuU2CY7H4ziteYbwE8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image051.jpg" size="10411">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KZSHNO6RDdkbSf6hu+FpiaTLk3I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image052.jpg" size="39333">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>01QqGw8bssGVgruE1Eo1J3cwOSc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Documentation\License.htm" size="12297">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>A+NyS8e2ccdbjObJ8KN4pS3o0tw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="FM.ico" size="322">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Gfo8Yr+CCfzIscsWWfs+PpHc8mA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Logo.jpg" size="1970">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>lbRM9BWzvKqRir5SSBnXNBLTuuQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MeasureAndWeigh.exe.config" size="1760">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KCxn28HbbV77h27lscp1ssFScis=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Measurement.ico" size="894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>X9MPcaYAb4tplBdQwA8NRbkbk0c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="My Project\Application.myapp" size="513">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>QL81KsmlcrolOmoDGmy1My6kCnc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\config.ini" size="5284">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ceFHAViW+iN6HPYXyD1Ry1QNjNU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="topicsman.ico" size="1646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UQeoaqjHVjWxBmFOHZhdx2Cu5Mc=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>

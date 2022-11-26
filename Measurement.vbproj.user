@@ -1,0 +1,55 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <CopyProjectDestinationFolder>
+    </CopyProjectDestinationFolder>
+    <CopyProjectUncPath>
+    </CopyProjectUncPath>
+    <CopyProjectOption>0</CopyProjectOption>
+    <ProjectView>ProjectFiles</ProjectView>
+    <PublishUrlHistory>C:\Temp\PC-Direct-Measurement-1-0-0-23\|C:\Temp\PC-Direct-Measurement-1-0-0-22\|C:\Temp\PC-Direct-Measurement-1-0-0-21\|C:\Temp\PC-Direct-Measurement-1-0-0-20\|C:\Temp\PC-Direct-Measurement-1-0-0-19\</PublishUrlHistory>
+    <InstallUrlHistory>
+    </InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <ApplicationRevision>24</ApplicationRevision>
+    <FallbackCulture>de-DE</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <EnableASPDebugging>false</EnableASPDebugging>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>false</EnableSQLServerDebugging>
+    <StartAction>Project</StartAction>
+    <StartArguments>
+    </StartArguments>
+    <StartProgram>
+    </StartProgram>
+    <StartURL>
+    </StartURL>
+    <StartWorkingDirectory>
+    </StartWorkingDirectory>
+    <StartWithIE>true</StartWithIE>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <EnableASPDebugging>false</EnableASPDebugging>
+    <EnableASPXDebugging>false</EnableASPXDebugging>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>false</EnableSQLServerDebugging>
+    <StartAction>Project</StartAction>
+    <StartArguments>
+    </StartArguments>
+    <StartProgram>
+    </StartProgram>
+    <StartURL>
+    </StartURL>
+    <StartWorkingDirectory>
+    </StartWorkingDirectory>
+    <StartWithIE>true</StartWithIE>
+  </PropertyGroup>
+</Project>

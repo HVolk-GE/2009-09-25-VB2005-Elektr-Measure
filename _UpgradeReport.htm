@@ -1,0 +1,1198 @@
+﻿<html>
+	<head>
+		<META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="_UpgradeReport_Files\UpgradeReport.css">
+		<title>Measurement.vbp-Aktualisierungsbericht</title>
+		
+		<script language="javascript">
+			function outliner () {
+				oMe = window.event.srcElement
+				//get child element
+				var child = document.all[event.srcElement.getAttribute("child",false)];
+				//if child element exists, expand or collapse it.
+				if (null != child)
+					child.className = child.className == "collapsed" ? "expanded" : "collapsed";
+			}
+		
+			function changepic() {
+				uMe = window.event.srcElement;
+				var check = uMe.src.toLowerCase();
+				if (check.lastIndexOf("upgradereport_plus.gif") != -1)
+				{
+					uMe.src = "_UpgradeReport_Files/UpgradeReport_Minus.gif"
+				}
+				else
+				{
+					uMe.src = "_UpgradeReport_Files/UpgradeReport_Plus.gif"
+				}
+			}
+		</script>
+		
+	</head>
+	<body topmargin="0" leftmargin="0" rightmargin="0" onclick="outliner();">
+		<h1>Aktualisierungsbericht für Measurement.vbp</h1>
+		
+		<p><span class="note">
+		<b>Aktualisierungszeitpunkt:  </b>19.05.2006 08:43<br>
+		</span></p>
+		
+		<h2>Aktualisierungszusammenfassung</h2>
+		<table cellpadding="2" cellspacing="0" width="98%" border="1" bordercolor="white" class="infotable">
+		    <tr>
+		        <td nowrap class="header" width="45%">Arten der gefunden Probleme</td>
+		        <td nowrap class="header" width="45%">Weitere Informationen</td>
+		        <td nowrap class="header" align="right">Anzahl</td>
+		    </tr>
+		    <tr class="row">
+		    <td class="SummaryIssueTypeContent">
+		        <IMG alt="Bereich erweitern/reduzieren" class="expanded" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Minus.gif" width="9" child="SummaryIssueType0">
+		        &nbsp;Compilerfehler
+		    </td>
+		    <td class="SummaryIssueTypeHelp">
+		        Es wurden Probleme gefunden, die die Kompilierung des Projekts verhindern. Diese Probleme müssen behoben werden, damit die Anwendung ausgeführt werden kann.
+		    </td>
+		    <td class="SummaryIssueTypeCount">
+		        3
+		    </td>
+		    </tr>
+		    <tr class="expanded" bgcolor="white" id="SummaryIssueType0">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID0">
+		            &nbsp;Alle Parameter in einer Declare-Anweisung müssen vollqualifiziert sein.
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>Die Declare-Anweisung unterstützt keine Parameter des Typs &quot;As Any&quot;.</a>
+		        </td>
+		        <td class="SummaryCount">3</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType0GUID0">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType0GUID0File0">
+		                        &nbsp;Module1.bas
+		                    </td>
+		                    <td class="SummaryFileCount">3</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType0GUID0File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">Speicherort</td>
+		                            <td nowrap class="issuehdr">Objekttyp</td>
+		                            <td nowrap class="issuehdr">Objektname</td>
+		                            <td nowrap class="issuehdr">Eigenschaft</td>
+		                            <td nowrap class="issuehdr">Beschreibung</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">GetPrivateProfileString</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>Das Deklarieren eines Parameters als &quot;As Any&quot; wird nicht unterstützt.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">WritePrivateProfileString</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>Das Deklarieren eines Parameters als &quot;As Any&quot; wird nicht unterstützt.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">WritePrivateProfileString</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>Das Deklarieren eines Parameters als &quot;As Any&quot; wird nicht unterstützt.</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		    <td class="SummaryIssueTypeContent">
+		        <IMG alt="Bereich erweitern/reduzieren" class="expanded" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Minus.gif" width="9" child="SummaryIssueType1">
+		        &nbsp;Entwurfsfehler
+		    </td>
+		    <td class="SummaryIssueTypeHelp">
+		        Einige Eigenschaften, die zur Entwurfszeit festgelegt wurden, haben kein direktes Äquivalent und konnten nicht aktualisiert werden. Testen Sie die Anwendung sorgfältig, um zu überprüfen, dass sie wie gewünscht funktioniert.
+		    </td>
+		    <td class="SummaryIssueTypeCount">
+		        5
+		    </td>
+		    </tr>
+		    <tr class="expanded" bgcolor="white" id="SummaryIssueType1">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0">
+		            &nbsp;Das Hintergrundbild eines Bereichs wird gekachelt.
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="ED2DEFAA-C59C-4EDB-AF23-73A16C92C3AC"'>Das Bild wird gekachelt.</a>
+		        </td>
+		        <td class="SummaryCount">1</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID0">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID0File0">
+		                        &nbsp;Pads.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID0File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">Speicherort</td>
+		                            <td nowrap class="issuehdr">Objekttyp</td>
+		                            <td nowrap class="issuehdr">Objektname</td>
+		                            <td nowrap class="issuehdr">Eigenschaft</td>
+		                            <td nowrap class="issuehdr">Beschreibung</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(Layout)</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="ED2DEFAA-C59C-4EDB-AF23-73A16C92C3AC"'>Die Panel-Eigenschaft Picture1.BackgroundImage wird gekachelt.</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1">
+		            &nbsp;Die ScaleMode-Eigenschaft wird nicht mehr unterstützt.
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="8027179A-CB3B-45C0-9863-FAA1AF983B59"'>ScaleMode wird nicht unterstützt.</a>
+		        </td>
+		        <td class="SummaryCount">1</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID1">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID1File0">
+		                        &nbsp;frmLogin.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID1File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">Speicherort</td>
+		                            <td nowrap class="issuehdr">Objekttyp</td>
+		                            <td nowrap class="issuehdr">Objektname</td>
+		                            <td nowrap class="issuehdr">Eigenschaft</td>
+		                            <td nowrap class="issuehdr">Beschreibung</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(Layout)</td>
+		                            <td class="issuecontent">Form</td>
+		                            <td class="issuecontent">frmLogin</td>
+		                            <td class="issuecontent">ScaleMode</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="8027179A-CB3B-45C0-9863-FAA1AF983B59"'>Die frmLogin.ScaleMode-Formulareigenschaft wird nicht unterstützt.</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID2">
+		            &nbsp;Die einzigen unterstützten Schriftarttypen sind OpenType und TrueType.
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="971F4DF4-254E-44F4-861D-3AA0031FE361"'>Nur die Schriftarten OpenType und TrueType werden unterstützt.</a>
+		        </td>
+		        <td class="SummaryCount">1</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID2">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID2File0">
+		                        &nbsp;Form2.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID2File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">Speicherort</td>
+		                            <td nowrap class="issuehdr">Objekttyp</td>
+		                            <td nowrap class="issuehdr">Objektname</td>
+		                            <td nowrap class="issuehdr">Eigenschaft</td>
+		                            <td nowrap class="issuehdr">Beschreibung</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(Layout)</td>
+		                            <td class="issuecontent">Label</td>
+		                            <td class="issuecontent">Label1</td>
+		                            <td class="issuecontent">Font</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="971F4DF4-254E-44F4-861D-3AA0031FE361"'>Nur TrueType- und OpenType-Schriftarten werden in Windows Forms unterstützt.</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID3">
+		            &nbsp;Einige Eigenschaften und Methoden konnten nicht aktualisiert werden.
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>Die Eigenschaft oder die Methode wurde nicht aktualisiert.</a>
+		        </td>
+		        <td class="SummaryCount">2</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType1GUID3">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType1GUID3File0">
+		                        &nbsp;frmLogin.frm
+		                    </td>
+		                    <td class="SummaryFileCount">2</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType1GUID3File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">Speicherort</td>
+		                            <td nowrap class="issuehdr">Objekttyp</td>
+		                            <td nowrap class="issuehdr">Objektname</td>
+		                            <td nowrap class="issuehdr">Eigenschaft</td>
+		                            <td nowrap class="issuehdr">Beschreibung</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">(Layout)</td>
+		                            <td class="issuecontent">Form</td>
+		                            <td class="issuecontent">frmLogin</td>
+		                            <td class="issuecontent">ScaleHeight</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>Form Eigenschaft frmLogin.ScaleHeight wurde nicht aktualisiert.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">(Layout)</td>
+		                            <td class="issuecontent">Form</td>
+		                            <td class="issuecontent">frmLogin</td>
+		                            <td class="issuecontent">ScaleWidth</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>Form Eigenschaft frmLogin.ScaleWidth wurde nicht aktualisiert.</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		    <td class="SummaryIssueTypeContent">
+		        <IMG alt="Bereich erweitern/reduzieren" class="expanded" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Minus.gif" width="9" child="SummaryIssueType2">
+		        &nbsp;Warnungen
+		    </td>
+		    <td class="SummaryIssueTypeHelp">
+		        Es wurden einige Unterschiede gefunden, die möglicherweise zu unerwarteten Fehler führen, wenn die Anwendung ausgeführt wird. Testen Sie die Anwendung sorgfältig, um zu überprüfen, dass sie wie gewünscht funktioniert.
+		    </td>
+		    <td class="SummaryIssueTypeCount">
+		        66
+		    </td>
+		    </tr>
+		    <tr class="expanded" bgcolor="white" id="SummaryIssueType2">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID0">
+		            &nbsp;Einige Ereignisse werden möglicherweise ausgelöst, wenn das Formular initialisiert wird.
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis wird möglicherweise ausgelöst, wenn das Formular initialisiert wird.</a>
+		        </td>
+		        <td class="SummaryCount">9</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType2GUID0">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID0File0">
+		                        &nbsp;Form2.frm
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID0File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">Speicherort</td>
+		                            <td nowrap class="issuehdr">Objekttyp</td>
+		                            <td nowrap class="issuehdr">Objektname</td>
+		                            <td nowrap class="issuehdr">Eigenschaft</td>
+		                            <td nowrap class="issuehdr">Beschreibung</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">cmbAuswahl_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis cmbAuswahl.SelectedIndexChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID0File1">
+		                        &nbsp;frmLogin.frm
+		                    </td>
+		                    <td class="SummaryFileCount">8</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID0File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">Speicherort</td>
+		                            <td nowrap class="issuehdr">Objekttyp</td>
+		                            <td nowrap class="issuehdr">Objektname</td>
+		                            <td nowrap class="issuehdr">Eigenschaft</td>
+		                            <td nowrap class="issuehdr">Beschreibung</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">Check1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Check1.CheckStateChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">Check2_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Check2.CheckStateChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">Check3_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Check3.CheckStateChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">Check4_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Check4.CheckStateChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">5</td>
+		                            <td class="issuecontent">Combo1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Combo1.SelectedIndexChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">6</td>
+		                            <td class="issuecontent">Option1_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Option1.CheckedChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">7</td>
+		                            <td class="issuecontent">Option2_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Option2.CheckedChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">8</td>
+		                            <td class="issuecontent">txtUserName_Change</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis txtUserName.TextChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td class="SummaryIssueContent">
+		            <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID1">
+		            &nbsp;Einige spät gebundene Standardeigenschaftsverweise konnten nicht aufgelöst werden.
+		        </td>
+		        <td class="SummaryIssueHelp">
+		            <a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Der spät gebundene Standardeigenschaftenverweis konnte nicht aufgelöst werden.</a>
+		        </td>
+		        <td class="SummaryCount">57</td>
+		    </tr>
+		    <tr class="collapsed" bgcolor="white" id="SummaryIssueType2GUID1">
+		        <td colspan="3">
+		            <table cellpadding="2" cellspacing="0" width="100%" border="1" bordercolor="white" class="content">
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID1File0">
+		                        &nbsp;Module1.bas
+		                    </td>
+		                    <td class="SummaryFileCount">1</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID1File0" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">Speicherort</td>
+		                            <td nowrap class="issuehdr">Objekttyp</td>
+		                            <td nowrap class="issuehdr">Objektname</td>
+		                            <td nowrap class="issuehdr">Eigenschaft</td>
+		                            <td nowrap class="issuehdr">Beschreibung</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">WriteValue</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent">CStr</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts vValue konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		                <tr class="row">
+		                    <td colspan="3" width="97%" class="SummaryFileContent">
+		                        <IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="SummaryIssueType2GUID1File1">
+		                        &nbsp;Form2.frm
+		                    </td>
+		                    <td class="SummaryFileCount">56</td>
+		                </tr>
+		                <tr class="collapsed" id="SummaryIssueType2GUID1File1" bgcolor="#ffffff">
+		                    <td colspan="4">
+		                    <table cellpadding="2" cellspacing="0" width="97%" border="1" bordercolor="#dcdcdc" class="content">
+		                        <tr bgcolor="#ffffff">
+		                            <td width="10" class="issuehdr">#</td>
+		                            <td nowrap class="issuehdr">Speicherort</td>
+		                            <td nowrap class="issuehdr">Objekttyp</td>
+		                            <td nowrap class="issuehdr">Objektname</td>
+		                            <td nowrap class="issuehdr">Eigenschaft</td>
+		                            <td nowrap class="issuehdr">Beschreibung</td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">1</td>
+		                            <td class="issuecontent">cmbAuswahl_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">2</td>
+		                            <td class="issuecontent">cmbAuswahl_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">3</td>
+		                            <td class="issuecontent">cmbAuswahl_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">4</td>
+		                            <td class="issuecontent">cmdAendern_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">5</td>
+		                            <td class="issuecontent">cmdAendern_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">6</td>
+		                            <td class="issuecontent">cmdAendern_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">7</td>
+		                            <td class="issuecontent">cmdAendern_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1(2).Text konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">8</td>
+		                            <td class="issuecontent">cmdHinzufuegen_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">9</td>
+		                            <td class="issuecontent">cmdHinzufuegen_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">10</td>
+		                            <td class="issuecontent">cmdHinzufuegen_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">11</td>
+		                            <td class="issuecontent">cmdHinzufuegen_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">12</td>
+		                            <td class="issuecontent">cmdHinzufuegen_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1(2).Text konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">13</td>
+		                            <td class="issuecontent">cmdLoeschen_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">14</td>
+		                            <td class="issuecontent">cmdLoeschen_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">15</td>
+		                            <td class="issuecontent">cmdSortieren_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Columns konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">16</td>
+		                            <td class="issuecontent">cmdSortieren_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlRange.Sort konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">17</td>
+		                            <td class="issuecontent">cmdSortieren_Click</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">18</td>
+		                            <td class="issuecontent">EnableControls</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts lblAuswahl.Enabled konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">19</td>
+		                            <td class="issuecontent">EnableControls</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdAendern.Enabled konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">20</td>
+		                            <td class="issuecontent">EnableControls</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdLoeschen.Enabled konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">21</td>
+		                            <td class="issuecontent">EnableControls</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdHinzufuegen.Enabled konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">22</td>
+		                            <td class="issuecontent">EnableControls</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdSortieren.Enabled konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">23</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Workbooks konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">24</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Workbooks konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">25</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Workbooks konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">26</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Application konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">27</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Workbooks konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">28</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">29</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">30</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">31</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">32</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">33</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">34</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">35</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">36</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">37</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">38</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">39</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">40</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">41</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">42</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">43</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">44</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Application konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">45</td>
+		                            <td class="issuecontent">Form_Load</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent">LCase</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts wb.Name konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">46</td>
+		                            <td class="issuecontent">Form_QueryUnload</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Close konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">47</td>
+		                            <td class="issuecontent">Form_QueryUnload</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Application konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">48</td>
+		                            <td class="issuecontent">Text1_Change</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdHinzufuegen.Enabled konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">49</td>
+		                            <td class="issuecontent">Text1_Change</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdHinzufuegen.Enabled konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">50</td>
+		                            <td class="issuecontent">Text1_Change</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent">Trim</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">51</td>
+		                            <td class="issuecontent">Text1_GotFocus</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().SelStart konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">52</td>
+		                            <td class="issuecontent">Text1_GotFocus</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1(Index).SelLength konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">53</td>
+		                            <td class="issuecontent">Text1_GotFocus</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent">Len</td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">54</td>
+		                            <td class="issuecontent">xlSpaltenEinlesen</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">55</td>
+		                            <td class="issuecontent">xlSpaltenEinlesen</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                        <tr bgcolor="#ffffff">
+		                            <td class="issuecontent">56</td>
+		                            <td class="issuecontent">xlSpaltenEinlesen</td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"></td>
+		                            <td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td>
+		                        </tr>
+		                    </table>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		            </table>
+		        </td>
+		    </tr>
+		    <tr class="row">
+		        <td colspan=2 class="content">Gesamt</td>
+		        <td class="SummaryCount">74</td>
+		    </tr>
+		</table>
+		
+		<h2><IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11" onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="DetailList"> Details für jede Datei im Projekt</h2>
+		<span id="DetailList" class="collapsed">
+		<table cellpadding="2" cellspacing="0" width="98%" border="1"bordercolor="white" class="infotable">
+			<tr>
+				<td nowrap class="header">Neuer Dateiname</td>
+				<td nowrap class="header">Ursprünglicher Dateiname</td>
+				<td nowrap class="header">Dateityp</td>
+				<td nowrap class="header">Status</td>
+				<td nowrap class="header">Fehler</td>
+				<td nowrap class="header">Warnungen</td>
+				<td nowrap class="header">Probleme insgesamt</td>
+			</tr>
+		<tr class="row">
+			<td class="content"><IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue0">&nbsp;(Globale Probleme)</td>
+			<td class="content"></td>
+			<td class="content"></td>
+			<td class="content">
+		</td>	<td class="content">0</td>
+			<td class="content">0</td>
+			<td class="content">0</td>
+		</tr>
+			<tr class="collapsed" id="issue0" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">Globale Aktualisierungsprobleme:</td></tr><tr><td class="issuenone">Keine</td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue1">&nbsp;Form1.vb</td>
+			<td class="content">Form1.frm</td>
+			<td class="content">Formular</td>
+			<td class="content">
+		Aktualisiert</td>	<td class="content">0</td>
+			<td class="content">0</td>
+			<td class="content">0</td>
+		</tr>
+			<tr class="collapsed" id="issue1" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">Aktualisierungsprobleme von Form1.frm:</td></tr><tr><td class="issuenone">Keine</td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue2">&nbsp;Form2.vb</td>
+			<td class="content">Form2.frm</td>
+			<td class="content">Formular</td>
+			<td class="content">
+		Aktualisiert mit Problemen</td>	<td class="content">1</td>
+			<td class="content">57</td>
+			<td class="content">58</td>
+		</tr>
+			<tr class="collapsed" id="issue2" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">Aktualisierungsprobleme von Form2.frm:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>Schweregrad</td><td class="issuehdr">Speicherort</td><td class="issuehdr">Objekttyp</td><td class="issuehdr">Objektname</td><td class="issuehdr">Eigenschaft</td><td class="issuehdr">Beschreibung</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>Entwurfsfehler</td><td class="issuecontent">(Layout)</td><td class="issuecontent">Label</td><td class="issuecontent">Label1</td><td class="issuecontent">Font</td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="971F4DF4-254E-44F4-861D-3AA0031FE361"'>Nur TrueType- und OpenType-Schriftarten werden in Windows Forms unterstützt.</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmbAuswahl_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmbAuswahl_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmbAuswahl_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">5</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmbAuswahl_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis cmbAuswahl.SelectedIndexChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td></tr>
+					<tr><td width="10" class="issuecontent">6</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdAendern_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">7</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdAendern_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">8</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdAendern_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">9</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdAendern_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1(2).Text konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">10</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdHinzufuegen_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">11</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdHinzufuegen_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">12</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdHinzufuegen_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">13</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdHinzufuegen_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">14</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdHinzufuegen_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1(2).Text konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">15</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdLoeschen_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">16</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdLoeschen_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">17</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdSortieren_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Columns konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">18</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdSortieren_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlRange.Sort konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">19</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">cmdSortieren_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">20</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">EnableControls</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts lblAuswahl.Enabled konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">21</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">EnableControls</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdAendern.Enabled konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">22</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">EnableControls</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdLoeschen.Enabled konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">23</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">EnableControls</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdHinzufuegen.Enabled konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">24</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">EnableControls</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdSortieren.Enabled konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">25</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Workbooks konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">26</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Workbooks konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">27</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Workbooks konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">28</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Application konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">29</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Workbooks konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">30</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">31</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">32</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">33</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">34</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">35</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">36</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">37</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">38</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">39</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">40</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">41</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">42</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">43</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">44</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">45</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Worksheets konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">46</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Application konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">47</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_Load</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent">LCase</td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts wb.Name konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">48</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_QueryUnload</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWB.Close konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">49</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Form_QueryUnload</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlAppl.Application konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">50</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Text1_Change</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdHinzufuegen.Enabled konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">51</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Text1_Change</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts cmdHinzufuegen.Enabled konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">52</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Text1_Change</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent">Trim</td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">53</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Text1_GotFocus</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().SelStart konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">54</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Text1_GotFocus</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1(Index).SelLength konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">55</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Text1_GotFocus</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent">Len</td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts Text1().Text konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">56</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">xlSpaltenEinlesen</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Range konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">57</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">xlSpaltenEinlesen</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td></tr>
+					<tr><td width="10" class="issuecontent">58</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">xlSpaltenEinlesen</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts xlWS.Cells konnte nicht aufgelöst werden.</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue3">&nbsp;frmLogin.vb</td>
+			<td class="content">frmLogin.frm</td>
+			<td class="content">Formular</td>
+			<td class="content">
+		Aktualisiert mit Problemen</td>	<td class="content">3</td>
+			<td class="content">8</td>
+			<td class="content">11</td>
+		</tr>
+			<tr class="collapsed" id="issue3" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">Aktualisierungsprobleme von frmLogin.frm:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>Schweregrad</td><td class="issuehdr">Speicherort</td><td class="issuehdr">Objekttyp</td><td class="issuehdr">Objektname</td><td class="issuehdr">Eigenschaft</td><td class="issuehdr">Beschreibung</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>Entwurfsfehler</td><td class="issuecontent">(Layout)</td><td class="issuecontent">Form</td><td class="issuecontent">frmLogin</td><td class="issuecontent">ScaleHeight</td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>Form Eigenschaft frmLogin.ScaleHeight wurde nicht aktualisiert.</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>Entwurfsfehler</td><td class="issuecontent">(Layout)</td><td class="issuecontent">Form</td><td class="issuecontent">frmLogin</td><td class="issuecontent">ScaleMode</td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="8027179A-CB3B-45C0-9863-FAA1AF983B59"'>Die frmLogin.ScaleMode-Formulareigenschaft wird nicht unterstützt.</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>Entwurfsfehler</td><td class="issuecontent">(Layout)</td><td class="issuecontent">Form</td><td class="issuecontent">frmLogin</td><td class="issuecontent">ScaleWidth</td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="CC4C7EC0-C903-48FC-ACCC-81861D12DA4A"'>Form Eigenschaft frmLogin.ScaleWidth wurde nicht aktualisiert.</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Check1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Check1.CheckStateChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td></tr>
+					<tr><td width="10" class="issuecontent">5</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Check2_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Check2.CheckStateChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td></tr>
+					<tr><td width="10" class="issuecontent">6</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Check3_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Check3.CheckStateChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td></tr>
+					<tr><td width="10" class="issuecontent">7</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Check4_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Check4.CheckStateChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td></tr>
+					<tr><td width="10" class="issuecontent">8</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Combo1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Combo1.SelectedIndexChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td></tr>
+					<tr><td width="10" class="issuecontent">9</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Option1_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Option1.CheckedChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td></tr>
+					<tr><td width="10" class="issuecontent">10</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">Option2_Click</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis Option2.CheckedChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td></tr>
+					<tr><td width="10" class="issuecontent">11</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">txtUserName_Change</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="88B12AE1-6DE0-48A0-86F1-60C0686C026A"'>Das Ereignis txtUserName.TextChanged kann ausgelöst werden, wenn das Formular initialisiert wird.</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue4">&nbsp;Module1.vb</td>
+			<td class="content">Module1.bas</td>
+			<td class="content">Modul</td>
+			<td class="content">
+		Aktualisiert mit Problemen</td>	<td class="content">3</td>
+			<td class="content">1</td>
+			<td class="content">4</td>
+		</tr>
+			<tr class="collapsed" id="issue4" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">Aktualisierungsprobleme von Module1.bas:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>Schweregrad</td><td class="issuehdr">Speicherort</td><td class="issuehdr">Objekttyp</td><td class="issuehdr">Objektname</td><td class="issuehdr">Eigenschaft</td><td class="issuehdr">Beschreibung</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>Compilerfehler</td><td class="issuecontent">GetPrivateProfileString</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>Das Deklarieren eines Parameters als &quot;As Any&quot; wird nicht unterstützt.</a></td></tr>
+					<tr><td width="10" class="issuecontent">2</td><td class="issuecontent" nowrap>Compilerfehler</td><td class="issuecontent">WritePrivateProfileString</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>Das Deklarieren eines Parameters als &quot;As Any&quot; wird nicht unterstützt.</a></td></tr>
+					<tr><td width="10" class="issuecontent">3</td><td class="issuecontent" nowrap>Compilerfehler</td><td class="issuecontent">WritePrivateProfileString</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="FAE78A8D-8978-4FD4-8208-5B7324A8F795"'>Das Deklarieren eines Parameters als &quot;As Any&quot; wird nicht unterstützt.</a></td></tr>
+					<tr><td width="10" class="issuecontent">4</td><td class="issuecontent" nowrap>Laufzeitwarnung</td><td class="issuecontent">WriteValue</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent">CStr</td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="6A50421D-15FE-4896-8A1B-2EC21E9037B2"'>Die Standardeigenschaft des Objekts vValue konnte nicht aufgelöst werden.</a></td></tr>
+				</table>
+			</td></tr>
+		<tr class="row">
+			<td class="content"><IMG alt="Bereich erweitern/reduzieren" class="expandable" height="11"onclick=changepic() src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" child="issue5">&nbsp;Pads.vb</td>
+			<td class="content">Pads.frm</td>
+			<td class="content">Formular</td>
+			<td class="content">
+		Aktualisiert mit Problemen</td>	<td class="content">1</td>
+			<td class="content">0</td>
+			<td class="content">1</td>
+		</tr>
+			<tr class="collapsed" id="issue5" bgcolor="#ffffff"><td colspan="7">
+				<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+				<tr><td colspan="7" class="issuetitle">Aktualisierungsprobleme von Pads.frm:</td></tr><tr><td width="10" class="issuehdr">#</td><td class="issuehdr" nowrap>Schweregrad</td><td class="issuehdr">Speicherort</td><td class="issuehdr">Objekttyp</td><td class="issuehdr">Objektname</td><td class="issuehdr">Eigenschaft</td><td class="issuehdr">Beschreibung</td></tr>
+					<tr><td width="10" class="issuecontent">1</td><td class="issuecontent" nowrap>Entwurfsfehler</td><td class="issuecontent">(Layout)</td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"></td><td class="issuecontent"><a href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="ED2DEFAA-C59C-4EDB-AF23-73A16C92C3AC"'>Die Panel-Eigenschaft Picture1.BackgroundImage wird gekachelt.</a></td></tr>
+				</table>
+			</td></tr>
+		<tr valign="top">
+			<td class="foot">5 Datei(en)</td>
+			<td class="foot">&nbsp;</td>
+			<td class="foot">Formulare: 4<br>Module: 1</td>
+			<td class="foot">
+		Aktualisiert: 5<BR>
+		Nicht aktualisiert: 0
+		</td>
+			<td class="foot">8</td>
+			<td class="foot">66</td>
+			<td class="foot">74</td>
+		</tr>
+		</table>
+		</span>
+		<p class="help">
+			<A href='ms-help://MS.VSExpressCC.v80/dv_commoner/local/redirect.htm?keyword="a16bd8ca-916d-4cd3-821c-417999d3cb97"'>Klicken Sie hier, um Hilfe zur Problembehebung in aktualisierten Projekten zu erhalten.</A>
+		</p>
+				<p>
+					<table class = "note">
+						<tr><td nowrap><b>Aktualisierungseinstellungen</b></td></tr>
+						<tr><td nowrap><b>Protokolldatei:</b> Measurement.log</td></tr>
+						<tr><td nowrap><b>Projekt migrieren nach:</b> WinExe</td></tr>
+						<tr><td nowrap><b>Ausgabeverzeichnis:</b> D:\Dokumente und Einstellungen\volkh\Eigene Dateien\Visual Studio 2005\Projects\Elektr-Measure\Projekt1.NET</td></tr>
+						<tr><td nowrap><b>Ausgabename:</b> Measurement.vbproj</td></tr>
+						<tr><td nowrap><b>Projektname:</b> Measurement</td></tr>
+						<tr><td nowrap><b>Projektpfad:</b> D:\Dokumente und Einstellungen\volkh\Eigene Dateien\Visual Studio 2005\Projects\Elektr-Measure\Measurement.vbp</td></tr>
+					</table>
+				</p>
+	</body>
+</html>

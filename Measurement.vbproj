@@ -1,0 +1,623 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <MyType>WindowsForms</MyType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED18BC62-5B7F-4D4E-906B-B6D753D9A907}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>MeasureAndWeigh</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MeasureAndWeigh.My.MyApplication</StartupObject>
+    <AssemblyMajorVersion>1</AssemblyMajorVersion>
+    <AssemblyMinorVersion>0</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>0</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>False</GenerateRevisionNumber>
+    <AssemblyCompanyName>www.vb-fun.de</AssemblyCompanyName>
+    <ApplicationIcon>topicsman.ico</ApplicationIcon>
+    <RootNamespace>MeasureAndWeigh</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignManifests>true</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <ManifestCertificateThumbprint>50EC38E38C1F455623183005473B6CF8FEC234E3</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Measurement_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <PublishUrl>C:\Temp\PC-Direct-Measurement-1-0-0-23\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>Wear Measurment and Weigh</ProductName>
+    <PublisherName>Direct to PC Measurement</PublisherName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>false</CreateWebPageOnPublish>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <DisallowUrlActivation>true</DisallowUrlActivation>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>MeasureAndWeigh.xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>MeasureAndWeigh.xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <Name>Microsoft.VisualBasic.Compatibility</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+      <Private>True</Private>
+    </Reference>
+    <COMReference Include="ActiveXPlugin">
+      <Guid>{06DD38D0-D187-11CF-A80D-00C04FD74AD8}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ADODB">
+      <Guid>{00000201-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="AxActiveXPlugin">
+      <Guid>{06DD38D0-D187-11CF-A80D-00C04FD74AD8}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxMSChart20Lib">
+      <Guid>{65E121D4-0C60-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxMSChartWiz">
+      <Guid>{D5288401-E6C5-11D1-BE7D-C63815000000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxOWC10">
+      <Guid>{0002E550-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DataFormWizard6">
+      <Guid>{EE2AA1E4-E6C1-11D1-BE7D-C63815000000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DEDesignerExtensibility">
+      <Guid>{B257B8C0-84F6-11D0-B3B0-00A0C9055D8E}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="Microsoft.Vbe.Interop">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <Lcid>0</Lcid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <WrapperTool>primary</WrapperTool>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="MSChart20Lib">
+      <Guid>{65E121D4-0C60-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSChartWiz">
+      <Guid>{D5288401-E6C5-11D1-BE7D-C63815000000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSComctlLib">
+      <Guid>{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="MSVBDataObjGen">
+      <Guid>{35935951-06D7-11D2-8D70-00A0C98B28E2}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="OWC10">
+      <Guid>{0002E550-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="SubWiz">
+      <Guid>{D7836000-1045-11D1-BE07-00AA00575603}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{EF404E00-EDA6-101A-8DAF-00DD010F7EBB}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplConfig.Designer.vb">
+      <DependentUpon>ApplConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ApplConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="cIniFile.vb" />
+    <Compile Include="Disc.Designer.vb">
+      <DependentUpon>Disc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Disc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigScrn.designer.vb">
+      <DependentUpon>frmConfigScrn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfigScrn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginDB.Designer.vb">
+      <DependentUpon>frmLoginDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTerminal.designer.vb">
+      <DependentUpon>frmTerminal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTerminal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LVReadAndWirteExcel.vb" />
+    <Compile Include="MainMenue.Designer.vb">
+      <DependentUpon>MainMenue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessungenDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MessungenDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MessungenDataSet.vb">
+      <DependentUpon>MessungenDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Module1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Module1DB.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Pads.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>Pads.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pads.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadandWirteExcel.vb" />
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpgradeSupport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="ApplConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ApplConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Disc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resX">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resX">
+      <DependentUpon>Form2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfigScrn.resx">
+      <DependentUpon>frmConfigScrn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resX">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginDB.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLoginDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTerminal.resx">
+      <DependentUpon>frmTerminal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenue.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainMenue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pads.resX">
+      <DependentUpon>Pads.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\filelist.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\header.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image003.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image005.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image007.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image009.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image011.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image013.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image015.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image017.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image019.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image021.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image023.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image025.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image031.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image032.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image033.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image034.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image036.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image037.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image038.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image039.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image040.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image041.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image042.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image043.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image044.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image045.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image046.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image047.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image048.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image049.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image050.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image051.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8-Dateien\image052.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\Elektronische Messwert Erfassung 1_0_0_8.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Documentation\License.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FM.ico" />
+    <Content Include="Logo.jpg" />
+    <Content Include="Measurement.ico" />
+    <None Include="Measurement_TemporaryKey.pfx" />
+    <None Include="Messungen.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="topicsman.ico" />
+    <None Include="app.config" />
+    <None Include="MessungenDataSet.xsc">
+      <DependentUpon>MessungenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MessungenDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MessungenDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="MessungenDataSet.xss">
+      <DependentUpon>MessungenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\DataSources\Disc.DisplayData.datasource" />
+    <None Include="My Project\DataSources\Microsoft.Office.Interop.Excel._Workbook.datasource" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Resources\config.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="_UpgradeReport.htm">
+      <SubType>Preview</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
